@@ -2,17 +2,17 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Login {
-    public static void CreateAccount() {
     ArrayList<String[]> users = new ArrayList<String[]>();
     Scanner scanner = new Scanner(System.in);
 
     }
+    public void CreateAccount() {
 
-    public static boolean ConfirmAccount(String name, String pass) {
         
+    public boolean ConfirmAccount(String name, String pass) {
     }
 
-    public static void UserLogin() { 
+    public void UserLogin() { 
 
     }
 
