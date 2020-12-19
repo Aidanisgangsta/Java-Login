@@ -19,6 +19,9 @@ public class Login {
     public static void main(String[] args) { 
         Scanner scanner = new Scanner(System.in);
 
+        // Creates new class instance
+        Login L = new Login();
+
         while (true) {
             String MENU_OPTIONS = "Please press:\n" +
             "a - Add account\n" +
@@ -33,9 +36,9 @@ public class Login {
             if (user_option.equalsIgnoreCase("q")) {
                 break;
             } else if (user_option.equalsIgnoreCase("a")) {
-                CreateAccount();
+                L.CreateAccount();
             } else if (user_option.equalsIgnoreCase("l")) {
-                UserLogin();
+                L.UserLogin();
             } else {
                 System.out.println("\nPlease enter a valid option\n");
             }
