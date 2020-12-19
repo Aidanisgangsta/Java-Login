@@ -24,11 +24,27 @@ public class Login {
         // Creates user object
         String[] user = {username, password};
         
-        // Adds user object to the ArrayList
-        users.add(user);
+        if (ConfirmAccount(username, password)) {
+            // Adds user object to the ArrayList
+            users.add(user);
+        } else {
+            return;
+        }
     }
 
     public boolean ConfirmAccount(String name, String pass) {
+        while (true) {
+            System.out.println("\nWould you like your account to have the username: " + name + " with the password: " + pass + " (y or n)");
+            String confirmation = scanner.nextLine();
+    
+            if (confirmation.equals("y")) { 
+                return true;
+            } else if (confirmation.equals("n")) {
+                return false;
+            } else {
+                System.out.println("\nPlease enter a valid option\n");
+            }
+        }
     }
 
     public void UserLogin() { 
