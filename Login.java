@@ -5,7 +5,6 @@ public class Login {
     ArrayList<String[]> users = new ArrayList<String[]>();
     Scanner scanner = new Scanner(System.in);
 
-    }
     public void CreateAccount() {
         System.out.println("\nHello, what would you like your name to be? ");
 
@@ -43,7 +42,7 @@ public class Login {
         Login L = new Login();
 
         while (true) {
-            String MENU_OPTIONS = "Please press:\n" +
+            String MENU_OPTIONS = "\nPlease press:\n" +
             "a - Add account\n" +
             "l - Login\n" +
             "q - quit\n";
