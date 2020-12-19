@@ -48,7 +48,31 @@ public class Login {
     }
 
     public void UserLogin() { 
+        System.out.println("\nWhat is your username? ");
+        String username = scanner.nextLine();
 
+        String[] account = {};
+        // Checks if the entered username is valid
+        for (String[] user : users) {
+            if (user[0].equals(username)) {
+                account = user;
+            }
+        }
+        // Checks if the account is not blank
+        if (account.length == 0) {
+            System.out.println("\nSorry, that account does not exist in our database.");
+            return;
+        }
+
+        // Checks if the users password is correct
+        System.out.println("\nWhat is your password? ");
+        String password = scanner.nextLine();
+
+        if (account[1].equals(password)) {
+            System.out.println("\nWelcome back, " + account[0]);
+        } else {
+            System.out.println("\nSorry, the password is incorrect");
+        }
     }
 
     public static void main(String[] args) { 
