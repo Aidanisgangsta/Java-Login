@@ -7,8 +7,28 @@ public class Login {
 
     }
     public void CreateAccount() {
+        System.out.println("\nHello, what would you like your name to be? ");
 
+        String username = scanner.nextLine();
+
+        // Checks if the username picked is already in use
+        for (String[] user : users) {
+            if (user[0].equals(username)) {
+                System.out.println("Sorry, that name is already in use. Please enter a different username.\n");
+                return;
+            }
+        }
+
+        System.out.println("\nWhat would you like your password to be");
+        String password = scanner.nextLine();
+
+        // Creates user object
+        String[] user = {username, password};
         
+        // Adds user object to the ArrayList
+        users.add(user);
+    }
+
     public boolean ConfirmAccount(String name, String pass) {
     }
 
