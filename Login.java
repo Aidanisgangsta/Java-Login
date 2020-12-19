@@ -1,7 +1,9 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Login {
     public static void CreateAccount() {
+    ArrayList<String[]> users = new ArrayList<String[]>();
     Scanner scanner = new Scanner(System.in);
 
     }
