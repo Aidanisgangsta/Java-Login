@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Login {
     public static void CreateAccount() {
+    Scanner scanner = new Scanner(System.in);
 
     }
 
@@ -14,7 +15,7 @@ public class Login {
     }
 
     public static void main(String[] args) { 
-        Scanner myObj = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         while (true) {
             String MENU_OPTIONS = "Please press:\n" +
@@ -25,7 +26,7 @@ public class Login {
             System.out.println(MENU_OPTIONS);
 
             // Takes user input for the menu
-            String user_option = myObj.nextLine();
+            String user_option = scanner.nextLine();
     
             if (user_option.equalsIgnoreCase("q")) {
                 break;
@@ -37,6 +38,6 @@ public class Login {
                 System.out.println("\nPlease enter a valid option\n");
             }
         }
-        myObj.close();
+        scanner.close();
     }
 }
