@@ -13,7 +13,7 @@ public class Login {
         // Checks if the username picked is already in use
         for (String[] user : users) {
             if (user[0].equals(username)) {
-                System.out.println("Sorry, that name is already in use. Please enter a different username.\n");
+                System.out.println("\nSorry, that name is already in use. Please enter a different username.");
                 return;
             }
         }
@@ -45,7 +45,7 @@ public class Login {
             String MENU_OPTIONS = "\nPlease press:\n" +
             "a - Add account\n" +
             "l - Login\n" +
-            "q - quit\n";
+            "q - quit";
 
             System.out.println(MENU_OPTIONS);
 
