@@ -5,6 +5,10 @@ public class Login {
 
     }
 
+    public static boolean ConfirmAccount(String name, String pass) {
+        
+    }
+
     public static void UserLogin() { 
 
     }
